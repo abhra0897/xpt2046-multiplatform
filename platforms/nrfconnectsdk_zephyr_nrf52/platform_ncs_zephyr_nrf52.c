@@ -63,7 +63,7 @@ void xpt2046_platform_delay(uint64_t ms)
     k_sleep(K_MSEC(ms));
 }
 
-uint32_t xpt2046_platform_get_millis(void)
+uint64_t xpt2046_platform_get_millis(void)
 {
     return k_uptime_get();
 }
